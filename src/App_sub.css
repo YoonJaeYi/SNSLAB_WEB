@@ -1,0 +1,186 @@
+.sidebar {
+  background-color: #CBCCCB;
+}
+.container {
+  background-color: #CBCCCB;
+}
+.bg {
+  background-color: #E9E8E6;
+}
+
+body {
+  background-color: #79819B;
+}
+
+.header {
+  background-color: #ffffff;
+  height: 35px;
+  width: 100%;
+  position: fixed;
+
+}
+
+.nav{
+  position: fixed;
+  display: inline-block;
+  border-left: 35px solid #00063C;
+  height: 100%;
+}
+
+.footer {
+  background-color: #A1A7B8;
+  height: 35px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.content {
+  background-color: #79819B;
+  display: inline-block;
+  position: fixed;
+  border-left: 35px solid #00063C;
+  height: 960px;
+  width: 100%;
+
+}
+
+.bg-box {
+  width: 565px;
+  height: 305px;
+  position: fixed;
+  background-color: #00063C;
+  border-radius: 10px;
+  margin-top: 60px;
+  margin-left: 710px;
+}
+
+.social {
+  margin: 90px;
+  margin-left: 700px;
+  margin-right: 700px;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+
+.social > p{
+  text-align: center;
+}
+
+.btn-area {
+  text-align: center;
+}
+
+.arrow-right {
+  background-image: url(./svg/arrow-right.svg);
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  left: 750px;
+  top: 200px;
+  
+}
+
+.arrow-left{
+  background-image: url(./svg/arrow-left.svg);
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  top: 200px;
+  right: 750px;
+  
+}
+
+
+
+#social-btn {
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 10px; 
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 7px 12px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.btn-google {
+  background-image: url(./svg/google.svg);
+}
+
+.btn-dcu {
+  background-image: url(./svg/DCU.svg);
+}
+
+.btn-github {
+  background-image: url(./svg/github.svg);
+}
+
+
+.form-area {
+  text-align: center;
+}
+
+.form-area input{
+  background-color: #ffffff;
+  width: 535px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  padding-left: 30px;
+  color: #1E1B1A;
+  margin-top: 30px;
+  position: relative;
+  float: block;
+}
+
+.form-area input::placeholder {
+  color: #1E1B1A;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.auth-btn {
+  background-color: #192387;
+  color: #ffffff;
+  position: absolute;
+  left: 1180px;
+  top: 288px;
+  width: 60px;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.btn-regi {
+  background-color: #ffffff;
+  width: 565px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-left: 30px;
+  color: #1E1B1A;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 60px;
+} 
+
+.already-id {
+  text-align: center;
+  margin: 30px;
+}
+
+.already-id a {
+  margin-left: 10px;
+}

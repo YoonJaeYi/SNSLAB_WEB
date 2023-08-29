@@ -1,38 +1,243 @@
-.App {
-  text-align: center;
+body {
+    background-color: #272423;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background {
+    display: flex;
+    position: relative;
+    justify-content: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tab {
+    background-color: #CBCCCB;
+    width: 100px;
+    height: 100;
+    border-radius: 8px;
+    border: 1px solid #787776;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.monitor {
+    width: 100%;
+    height: 100;
+    border-radius: 8px;
+    background-color: #CBCCCB;
 }
 
-.App-link {
-  color: #61dafb;
+
+.monitor-line {
+    flex: auto;
+    width: 100;
+    height: 963px;
+    margin: 15px;
+    border-radius: 15px;
+    border-top: 1px solid #827F81;
+    border-right: 2px solid #827F81;
+    border-bottom: 2px solid #827F81;
+    border-left: 1px solid #827F81;
+    background-color: #E9E8E6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.monitor-line2 {
+    flex: auto;
+    width: 100;
+    height: 933px;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: #E9E8E6;
+    position: relative;
+}
+
+.upper-tab {
+    background-color: #ffffff;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+}
+
+.number-tab {
+    background-color: #00063C;
+    border-radius: 20px 0px 0px 20px;
+    width: 35px;
+    height: 100%;
+    float: left;
+    position: absolute;
+}
+
+.footer-tab {
+    background-color: #A1A7B8;
+    border-radius: 0px 0px 15px 15px;
+    width: 100%;
+    height: 35px;
+    bottom: 0%;
+    position: absolute;
+    text-align: center;
+    padding: 0;
+}
+
+.footer-tab p {
+    font-size: 12.5px;
+    margin-top: 11px;
+}
+
+.contents {
+    background-color: #79819B;
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+    display: flex;
+    
+}
+
+.sync-login {
+    margin-top: 110px;
+    margin-bottom: 100px;
+    text-align: center;
+    width: 450px;
+    margin-left: 500px;
+    margin-right: 500px;
+    flex: auto;
+}
+
+.sync-login p {
+    font-size: 21px;
+}
+.sync-btn {
+    text-align: center;
+    flex: auto;
+}
+
+#btn {
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius: 10px; 
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+    box-shadow: 7px 12px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.sync-btn div {
+    margin-bottom: 0.7%;
+}
+
+#arrow-right {
+    background-image: url(./svg/arrow-right.svg);
+    width: 30px;
+    height: 40px;
+    display: inline-block;
+}
+  
+#arrow-left{
+    background-image: url(./svg/arrow-left.svg);
+    width: 30px;
+    height: 40px;
+    display: inline-block;
+}
+  
+form {
+    width: 100%;
+    height: 450px;
+    flex: auto;
+    position: relative;
+    margin-top: 2%;
+}
+
+.input-info input::placeholder {
+    color: #1E1B1A;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.input-email {
+    flex: auto;
+    position: relative;
+}
+
+.input-info {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 25px;
+}
+
+.input-info input{
+    background-color: #ffffff;
+    width: 65%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    padding-left: 30px;
+    color: #1E1B1A;
+    position: relative;
+    margin-top: 25px;
+}
+
+.input-email button {
+    background-color: #192387;
+    color: #ffffff;
+    left: 75%;
+    top: 39%;
+    width: 60px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    flex: auto;
+    position: absolute;
+} 
+
+.signup-btn {
+    background-color: #ffffff;
+    width: 65%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-left: 30px;
+    color: #000960;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 60px;
+    
+} 
+
+.already-id {
+    text-align: center;
+    flex: auto;
+    position: relative;
+
+}
+  
+.already-id a {
+    margin-left: 10px;
+}
+
+.bg-box {
+    width: 62%;
+    height: 305px;
+    background-color: #00063C;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 180px;
+    position: absolute;
+
+}
+
+.google-btn {
+  background-image: url(./svg/google.svg);
+}
+
+.dcu-btn {
+  background-image: url(./svg/DCU.svg);
+}
+
+.github-btn {
+  background-image: url(./svg/github.svg);
 }
