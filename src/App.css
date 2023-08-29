@@ -1,13 +1,14 @@
+/* 배경 */
 body {
     background-color: #272423;
 }
-
+/*  */
 .background {
     display: flex;
     position: relative;
     justify-content: left;
 }
-
+/* 왼쪽 tab */
 .tab {
     background-color: #CBCCCB;
     width: 100px;
@@ -16,15 +17,14 @@ body {
     border: 1px solid #787776;
 
 }
-
+/* 오른쪽 monitor */
 .monitor {
     width: 100%;
     height: 100;
     border-radius: 8px;
     background-color: #CBCCCB;
 }
-
-
+/* monitor의 바로 하위 레이어 */
 .monitor-line {
     flex: auto;
     width: 100;
@@ -37,8 +37,7 @@ body {
     border-left: 1px solid #827F81;
     background-color: #E9E8E6;
 }
-
-
+/* monitor-line의 하위 레이어 실질적 배경 */
 .monitor-line2 {
     flex: auto;
     width: 100;
@@ -48,7 +47,7 @@ body {
     background-color: #E9E8E6;
     position: relative;
 }
-
+/* 흰색 상단바 */
 .upper-tab {
     background-color: #ffffff;
     border-radius: 15px 15px 0px 0px;
@@ -56,7 +55,7 @@ body {
     height: 35px;
     position: absolute;
 }
-
+/* 네이비 왼쪽 사이드바 */
 .number-tab {
     background-color: #00063C;
     border-radius: 20px 0px 0px 20px;
@@ -65,7 +64,7 @@ body {
     float: left;
     position: absolute;
 }
-
+/* 회색 하단바 */
 .footer-tab {
     background-color: #A1A7B8;
     border-radius: 0px 0px 15px 15px;
@@ -76,12 +75,12 @@ body {
     text-align: center;
     padding: 0;
 }
-
+/* 회색 하단바의 구문 디자인 */
 .footer-tab p {
     font-size: 12.5px;
     margin-top: 11px;
 }
-
+/* 테두리를 제외한 중요 콘텐츠가 들어갈 영역 디자인 */
 .contents {
     background-color: #79819B;
     border-radius: 18px;
@@ -92,7 +91,7 @@ body {
     display: flex;
     
 }
-
+/* 연동 로그인 영역 디자인 */
 .sync-login {
     margin-top: 110px;
     margin-bottom: 100px;
@@ -102,15 +101,16 @@ body {
     margin-right: 500px;
     flex: auto;
 }
-
+/* 연동 로그인의 구문 디자인 */
 .sync-login p {
     font-size: 21px;
 }
+/* 연동 로그인 버튼을 묶은 영역 */
 .sync-btn {
     text-align: center;
     flex: auto;
 }
-
+/* 연동 로그인 버튼 디자인 */
 #btn {
     width: 65px;
     height: 65px;
@@ -121,25 +121,25 @@ body {
     margin-right: 25px;
     box-shadow: 7px 12px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
+/* arrow svg 의 margin을 설정 */
 .sync-btn div {
     margin-bottom: 0.7%;
 }
-
+/* arrow-to-right svg 파일 디자인 */
 #arrow-right {
     background-image: url(./svg/arrow-right.svg);
     width: 30px;
     height: 40px;
     display: inline-block;
 }
-  
+/* arrow-to-left svg 파일 디자인 */
 #arrow-left{
     background-image: url(./svg/arrow-left.svg);
     width: 30px;
     height: 40px;
     display: inline-block;
 }
-  
+/* form 영역 디자인 */
 form {
     width: 100%;
     height: 450px;
@@ -147,25 +147,25 @@ form {
     position: relative;
     margin-top: 2%;
 }
-
+/* input box의 placeholder 디자인 */
 .input-info input::placeholder {
     color: #1E1B1A;
     font-size: 15px;
     padding: 0;
     margin: 0;
 }
-
+/* 이메일 입력칸과 인증버튼을 묶은 영역 */
 .input-email {
     flex: auto;
     position: relative;
 }
-
+/* 4개의 정보입력칸을 묶은 영역 */
 .input-info {
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 25px;
 }
-
+/* 4개 정보입력칸 디자인 */
 .input-info input{
     background-color: #ffffff;
     width: 65%;
@@ -178,7 +178,7 @@ form {
     position: relative;
     margin-top: 25px;
 }
-
+/* 이메일 인증버튼 디자인 */
 .input-email button {
     background-color: #192387;
     color: #ffffff;
@@ -192,7 +192,7 @@ form {
     flex: auto;
     position: absolute;
 } 
-
+/* 회원가입 버튼 디자인 */
 .signup-btn {
     background-color: #ffffff;
     width: 65%;
@@ -207,18 +207,18 @@ form {
     margin-top: 60px;
     
 } 
-
+/* 기존 계정 여부를 묻는 구문 영역 */
 .already-id {
     text-align: center;
     flex: auto;
     position: relative;
 
 }
-  
+/* 기존 계정이 있을 시 이동하는 로그인 앵커의 margin 제어 */
 .already-id a {
     margin-left: 10px;
 }
-
+/* 4개의 정보입력칸 뒤에 존재하는 box 디자인 */
 .bg-box {
     width: 62%;
     height: 305px;
@@ -229,15 +229,15 @@ form {
     position: absolute;
 
 }
-
+/* google svg 제어 */
 .google-btn {
   background-image: url(./svg/google.svg);
 }
-
+/* DCU svg 제어 */
 .dcu-btn {
   background-image: url(./svg/DCU.svg);
 }
-
+/* github svg 제어 */
 .github-btn {
   background-image: url(./svg/github.svg);
 }
